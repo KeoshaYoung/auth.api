@@ -1,0 +1,31 @@
+@jwt = $2a$12$lH0URv4.3ua2aWZTQ5dzCuRxsvSj5KGiEyG0LK26b0oxHwtZ8U7NK
+
+### UPDATE USER
+PATCH  http://localhost:3000/users/11.json
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{
+   "admin": "false"
+}
+
+### USERS CREATE (SIGNUP)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Bob",
+  "email": "test34@example.com",
+  "password": "password",
+  "password_confirmation": "password",
+  "admin": "true"
+}
+
+### SESSIONS CREATE (LOGIN)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "test34@example.com",
+  "password": "password"
+}
