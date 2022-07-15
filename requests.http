@@ -1,4 +1,4 @@
-@jwt = $2a$12$lH0URv4.3ua2aWZTQ5dzCuRxsvSj5KGiEyG0LK26b0oxHwtZ8U7NK
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMiwiZXhwIjoxNjU4MDAyODY0fQ.P9QFAzQBouBTVj7ylwlvkpP7vLN-G6qCIcyxARlTDJE
 
 ### UPDATE USER
 PATCH  http://localhost:3000/users/11.json
